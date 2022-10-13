@@ -1,0 +1,85 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #06283D;
+}
+nav a h4{
+    font-size: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #256D85;
+}
+.card{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 18rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+.card:hover{
+    box-shadow: 6px 8px 10px rgb(0, 0, 0);
+    transform: scale(0.95);
+    transition: 1s;
+}
+.keterangan{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.keterangan h3 a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.keterangan h3 a:hover{
+    color: #256D85;
+}
+.keterangan span p{
+    width: 35px;
+    border-radius: 4px;
+    background-color: rgb(199, 199, 199);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.keterangan span.green{
+    font-weight: bold;
+    color: rgb(15, 175, 0);
+}
+.keterangan span.orange{
+    font-weight: bold;
+    color: orange;
+}
+.keterangan span.red{
+    font-weight: bold;
+    color: red;
+}
+.release_date{
+    display: flex;
+    align-items:flex-end;
+}   
+.overview{  
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: aliceblue;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform;
+}
+
+.card:hover .overview{
+    transform: translateY(0);
+}
